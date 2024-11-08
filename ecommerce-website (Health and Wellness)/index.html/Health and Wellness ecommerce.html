@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Holistic Harmony</title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="products.js" defer></script>
+   <script src="script.js" defer></script>
+</head>
+<body>
+   <!-- Header Section -->
+   <header>
+      <div class="header-top">
+         <h1>Holistic Harmony</h1>
+         <img src="H.png" alt="Holistic Harmony Logo" class="logo">
+         <input type="text" id="search-bar" placeholder="Search for products..." class="search-bar">
+         <button id="cart-button">Cart (<span id="cart-count">0</span>)</button>
+      </div>
+      <!-- Navigation -->
+      <nav>
+         <ul>
+            <li><a href="#products">Shop All</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#categories">Categories</a></li>
+         </ul>
+      </nav>
+      <!-- Breadcrumb Navigation -->
+      <nav aria-label="breadcrumb">
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#categories">Categories</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Featured Products</li>
+         </ol>
+      </nav>
+   </header>
+
+   <!-- Main Content -->
+   <main>
+      <!-- Featured Products Section -->
+      <section id="featured">
+         <h2>Featured Products</h2>
+         <div id="product-list"></div>
+      </section>
+
+      <!-- Categories Section -->
+      <section id="categories">
+         <h2>Shop by Category</h2>
+         <div class="category-list">
+            <div class="category" data-category="Supplements">Supplements</div>
+            <div class="category" data-category="Organic Foods">Organic Foods</div>
+            <div class="category" data-category="Fitness Gear">Fitness Gear</div>
+            <div class="category" data-category="Beauty & Personal Care">Beauty & Personal Care</div>
+         </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about">
+         <h2>About Us</h2>
+         <p>At <strong>Holistic Harmony</strong>, our journey began with a personal realization: while health and wellness are vital to a fulfilling life, the products to achieve them are often priced beyond reach for many. We believe that everyone deserves access to affordable, high-quality health solutions. With this vision, Holistic Harmony was created to offer natural products at prices that are accessible to all, ensuring that the path to wellness is open to everyone.</p>
+      </section>
+
+      <!-- Contact Us Section -->
+      <section id="contact">
+         <h2>Contact Us</h2>
+         <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+         </form>
+      </section>
+
+      <!-- Cart Modal -->
+      <!-- Help -->
+      <div id="cart-modal" class="modal">
+         <div class="modal-content">
+            <span id="close-cart" class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <h3 id="total-price">Total: $0.00</h3>
+            <button id="checkout-button">Checkout</button>
+         </div>
+      </div>
+   </main>
+
+   <!-- Footer -->
+   <footer>
+      <p>&copy; 2024 Holistic Harmony. All rights reserved.</p>
+   </footer>
+</body>
+</html>
